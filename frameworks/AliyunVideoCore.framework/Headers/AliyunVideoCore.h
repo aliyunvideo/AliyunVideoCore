@@ -18,5 +18,5 @@ FOUNDATION_EXPORT const unsigned char AliyunVideoCoreVersionString[];
 
 
 #import <AliyunVideoCore/AVAsset+AVCInfo.h>
-#import <AliyunVideoCore/AliyunEventManager.h>
+#import <AliyunVideoCore/AVCEventManager.h>
 
