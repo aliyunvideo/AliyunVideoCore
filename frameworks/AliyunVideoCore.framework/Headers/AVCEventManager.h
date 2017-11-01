@@ -81,10 +81,12 @@ extern NSString * const AVCEventVersionKey;
 @property (nonatomic, copy) NSString *requestID;
 // 是否开启
 @property (nonatomic, assign) BOOL enabled;
+// logstore
+@property (nonatomic, copy) NSString *logstore;
 
 + (instancetype)sharedManager;
 
-- (instancetype)newInstance;
+- (instancetype)newInstance:(NSString *)logstore;
 
 - (void)sendEvent:(AVCEvent)event params:(NSDictionary *)params __attribute__((deprecated("This method will not send necessary common parameters such as sdk version.")));
 
